@@ -22,6 +22,7 @@ return {
 				python = { "isort", "black" },
 				java = { "google-java-format" },
 				cpp = { "clang-format" },
+				bash = { "shfmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
