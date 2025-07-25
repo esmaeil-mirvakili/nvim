@@ -38,18 +38,17 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
-opt.mouse = 'a'                       -- Enable mouse support
-opt.showmatch = true        -- Highlight matching parenthesis
-opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
-opt.linebreak = true        -- Wrap on word boundary
-opt.laststatus = 3            -- Set global statusline
-
+opt.mouse = "a" -- Enable mouse support
+opt.showmatch = true -- Highlight matching parenthesis
+opt.colorcolumn = "80" -- Line lenght marker at 80 columns
+opt.linebreak = true -- Wrap on word boundary
+opt.laststatus = 3 -- Set global statusline
 
 -----------------------------------------------------------
 -- Memory, CPU
 -----------------------------------------------------------
-opt.hidden = true           -- Enable background buffers
-opt.history = 100           -- Remember N lines in history
-opt.lazyredraw = true       -- Faster scrolling
-opt.synmaxcol = 240         -- Max column for syntax highlight
-opt.updatetime = 250        -- ms to wait for trigger an event
+opt.hidden = true -- Enable background buffers
+opt.history = 100 -- Remember N lines in history
+opt.lazyredraw = true -- Faster scrolling
+opt.synmaxcol = 240 -- Max column for syntax highlight
+opt.updatetime = 250 -- ms to wait for trigger an event
