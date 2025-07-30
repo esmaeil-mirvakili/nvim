@@ -22,12 +22,14 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
--- Disable arrow keys
-keymap.set('', '<up>', '<nop>')
-keymap.set('', '<down>', '<nop>')
-keymap.set('', '<left>', '<nop>')
-keymap.set('', '<right>', '<nop>')
+-- Map delete to black hole delete
+keymap.set("n", "d", '"_d', { desc = "Delete without yanking" }) -- delete without yanking
+
+-- Remove mapping for arrow keys in normal mode
+keymap.set("n", "<Up>", "<Nop>", { desc = "Disable Up Arrow" })
+keymap.set("n", "<Down>", "<Nop>", { desc = "Disable Down Arrow" })
+keymap.set("n", "<Left>", "<Nop>", { desc = "Disable Left Arrow" })
+keymap.set("n", "<Right>", "<Nop>", { desc = "Disable Right Arrow" })
 
 -- Reload configuration without restart nvim
-keymap.set('n', '<leader>%', ':so %<CR>')
-
+keymap.set("n", "<leader>%", ":so %<CR>")
